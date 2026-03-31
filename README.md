@@ -16,3 +16,7 @@ auth-service/
  ├── jwt/
  ├── mfa/
  └── config/
+
+
+
+CREATE DATABASE agrilink_auth;
