@@ -1,12 +1,16 @@
 package com.agrilink.auth_service.dto;
+import jakarta.validation.constraints.NotBlank;
 
 
 import lombok.Data;
 
 @Data
+
 public class LoginRequest {
 
+    @NotBlank(message = "Email is required")
     private String email;
-    private String password;
 
+    @NotBlank(message = "Password is required")
+    private String password;
 }
